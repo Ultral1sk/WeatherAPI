@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/lib/jquery-3.4.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mainstyle.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                                    <!-- Outside Container -->
+            <div class="container-fluid col-xs-1 " id="background">
+               <div class="row">
+                    <!-- Inside Container -->
+                    <div class="container-fluid shadow-lg p-4 mb-4" id="centerBox">  
+                        <div class="text-center" id="timeContainer"></div>
+                            <form class="example bg-light d-flex justify-content-between mt-3">
+                                <label for="search"></label>
+                                <i class="fa fa-map-marker pt-3 pl-2 pr-2"></i>
+                                <input type="text" placeholder="Enter a city" name="search" id="inputCity">
+                                <button type="button" id="btn" class="fa fa-search"></button>
+                            </form>
+
+                        <!-- Hidden Container onclick Display -->
+                                        <div class="container text-center text-light">
+                                            <div class="mt-3" id="error"></div>
+                                            <div id="cityIconContainer">
+                                                <span id="cityContainer"></span>
+                                                <span id="weatherIcon"></span>
+                                            </div>
+                                                  <p id="celsiusContainer" class=" display-4"></p>
+                                                    <div class="hiddenContainer celsius Container "></div>                                                                                     
+                                        </div>
+                                       
+                                      
+                                      
+                            <div class="d-flex justify-content-between text-light text-center" style="font-size: 25px;"> 
+                                    
+                                <div class="" id="humidityContainer"></div>
+                               
+                                    <div class="" id="windContainer"></div>  
+                                   
+                                        <div class="" id="visibilityContainer"></div> 
+                                        
+                            </div>
+                            
+         
+                        </div>
+                     </div>
+                   </div>
+
+                            <!--  Weather during the week -->
+                      <!--   <div class="weekdays text-center">
+                            <ul>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                                <li>Monday<i></i></li>
+                            </ul>
+                        </div> -->
+                   
+
+
+         
+
+
+
+
+
+    
+        <script src="weather.js"></script>
+    </body>
+</html>
